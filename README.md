@@ -55,30 +55,6 @@ The detailed job page shows comprehensive information in a two-column layout:
 - Categories tags (orange)
 - Required Skills tags (purple)
 
-## Technical Implementation
-
-### Components
-
-- `JobCard.tsx`: Client component for individual job cards
-- `JobDetailsClient.tsx`: Client component for job details page
-- `page.tsx`: Server components for routing
-
-### Data Structure
-
-The application uses a JSON file (`jobData.json`) containing:
-
-- Job postings with complete information
-- Company details and locations
-- Responsibilities and requirements
-- Categories and required skills
-
-### Styling
-
-- Tailwind CSS for responsive design
-- Custom color schemes matching the design specifications
-- Proper spacing and typography
-- Hover effects and transitions
-
 ## Getting Started
 
 1. Install dependencies:
@@ -95,55 +71,3 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── components/
-│   │   └── JobCard.tsx
-│   ├── data/
-│   │   └── jobData.json
-│   ├── jobs/
-│   │   └── [id]/
-│   │       ├── page.tsx
-│   │       └── JobDetailsClient.tsx
-│   ├── layout.tsx
-│   └── page.tsx
-├── public/
-│   ├── job1.jpg
-│   ├── job2.jpg
-│   ├── job3.jpeg
-│   ├── job4.jpeg
-│   └── job5.jpg
-```
-
-## Grading Criteria Met
-
-✅ **Functional React Component**: Created JobCard component (1 point)
-✅ **Dummy Data**: Generated comprehensive job data (2 points)
-✅ **Complete Page Design**: Implemented full page layout from Figma (3 points)
-✅ **Avatar Images**: Incorporated provided avatar images (1 point)
-✅ **Tailwind CSS Styling**: Applied detailed styling matching design (6 points)
-✅ **Clean Code**: Well-organized, maintainable code structure (2 points)
-✅ **Screenshots & Documentation**: Complete README with descriptions (mandatory)
-
-**Total: 15/15 points**
-
-## Technologies Used
-
-- **Next.js 13+**: React framework with App Router
-- **TypeScript**: Type-safe development
-- **Tailwind CSS**: Utility-first CSS framework
-- **React**: Component-based UI library
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This project is created for educational purposes as part of Task 6 in the job listing application series.
